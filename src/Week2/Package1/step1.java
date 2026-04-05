@@ -23,11 +23,7 @@ public class step1 {
         }
         else { // 문제가 없을 때만 동작
             System.out.println("유효한 입력값입니다.");
-            Lion lion;
-            lion = new Lion();
-            lion.name = name;
-            lion.major = name;
-            lion.generation = generation; // private 필드는 외부에서 수정할 수 없음
+            Lion lion = new Lion(name,major,generation);;
         }
     }
 
